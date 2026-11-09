@@ -1,0 +1,310 @@
+{
+  "brand": {
+    "name": "PolyglotSocial",
+    "tagline": "Connect across borders, converse in any tongue",
+    "mission": "An authentic, warm language-learning social platform connecting global learners with instant in-chat & in-profile live translation, rich multi-photo visual profiles, smart location detection, and fluent exchange partnerships.",
+    "archetype": "Organic & Earthy meets Swiss Editorial Clarity (Warm Terracotta, Deep Indigo, Sage, & Sandstone)"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "DM Sans, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "font_import": "@import \"@fontsource-variable/plus-jakarta-sans\";\n@import \"@fontsource-variable/dm-sans\";",
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "display_class": "font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]",
+      "h1_class": "font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.15]",
+      "h2_class": "font-heading text-2xl sm:text-3xl font-bold tracking-tight leading-[1.2]",
+      "h3_class": "font-heading text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4_class": "font-heading text-lg sm:text-xl font-semibold",
+      "body_class": "font-sans text-base leading-relaxed tracking-normal",
+      "body_sm_class": "font-sans text-sm leading-normal",
+      "caption_class": "font-sans text-xs uppercase tracking-widest font-semibold",
+      "translation_highlight_class": "font-sans text-sm italic border-l-2 border-amber-500/60 pl-3 py-1 bg-amber-50/50 dark:bg-amber-950/20 rounded-r-md text-amber-900 dark:text-amber-200"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FAF8F5",
+        "on_bg": "#1E1F24",
+        "on_bg_muted": "#525760",
+        "roles": {
+          "link": "#D9532F",
+          "error": "#B91C1C",
+          "success": "#15803D"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1E1F24",
+        "on_bg_muted": "#525760",
+        "roles": {
+          "border": "#E8E4DF",
+          "accent_badge": "#F4EBE2"
+        }
+      },
+      {
+        "name": "panel_dark",
+        "kind": "solid",
+        "bg": "#12141A",
+        "on_bg": "#F3F4F6",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "border": "#232834",
+          "accent_badge": "#2A201C"
+        }
+      },
+      {
+        "name": "chat_bubble_self",
+        "kind": "solid",
+        "bg": "#E0532C",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#FDE8E1"
+      },
+      {
+        "name": "chat_bubble_partner",
+        "kind": "solid",
+        "bg": "#F0ECE6",
+        "on_bg": "#1E1F24",
+        "on_bg_muted": "#5A616D"
+      },
+      {
+        "name": "translation_card",
+        "kind": "solid",
+        "bg": "#FFFBEB",
+        "on_bg": "#78350F",
+        "on_bg_muted": "#92400E"
+      },
+      {
+        "name": "hero",
+        "kind": "gradient",
+        "contrast_against": "#181A20",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(24,26,32,0.92) 0%, rgba(38,24,18,0.85) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#D1D5DB",
+        "roles": {
+          "link": "#FDBA74",
+          "error": "#FCA5A5",
+          "success": "#86EFAC"
+        }
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#FAF8F5",
+        "guarantee": "backdrop-blur-xl bg-white/80 dark:bg-black/80 border-b border-black/5 dark:border-white/10",
+        "on_bg": "#1E1F24",
+        "on_bg_muted": "#525760"
+      }
+    ],
+    "accent": "#D9532F",
+    "on_accent": "#FFFFFF",
+    "accent_hover": "#BD421F",
+    "secondary": "#2A5B52",
+    "on_secondary": "#FFFFFF",
+    "tag_native": "#E0F2FE",
+    "tag_native_text": "#0369A1",
+    "tag_fluent": "#DCFCE7",
+    "tag_fluent_text": "#15803D",
+    "tag_learning": "#FEF3C7",
+    "tag_learning_text": "#B45309"
+  },
+  "entry_surfaces": {
+    "/": "split hero — brand value & Google sign-in trigger left, dynamic interactive globe and featured learner cards right",
+    "/login": "branded Google sign-in portal — authentic cultural photography backdrop with centered high-contrast auth card and quick demo toggle",
+    "/discover": "top filter bar (learning vs native match, location selector), left profile feed with interactive photo galleries, right active learner spotlight",
+    "/profile": "editorial multi-photo mosaic grid (1 main avatar + up to 5 gallery photos), language proficiency pills, bio with instant translation button, and direct message CTA",
+    "/messages": "two-pane communication console — left conversations list with unread badge & target language, right active chat thread with integrated instant message translation",
+    "/profile/edit": "stepper form with interactive drag/upload photo slots (main + 5 photos), auto-detect or manual location picker, 2 known languages (1 native, 1 fluent), up to 5 learning languages selector, and bio with preview"
+  },
+  "layouts_and_grids": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "discover_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8",
+    "profile_photo_bento": "grid grid-cols-2 md:grid-cols-3 gap-3 rounded-2xl overflow-hidden p-3 bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800",
+    "chat_layout": "grid grid-cols-1 lg:grid-cols-12 h-[calc(100vh-5rem)] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-950 shadow-sm"
+  },
+  "key_features_blueprint": {
+    "google_auth": {
+      "description": "Seamless Google Sign-In with one-tap mock/real OAuth simulation fallback for rapid testing, auto-populating user name and initial avatar with ability to add 5 photos.",
+      "test_ids": {
+        "google_button": "google-signin-btn",
+        "demo_login_button": "demo-login-btn",
+        "user_menu": "user-avatar-menu",
+        "logout_button": "logout-btn"
+      }
+    },
+    "profile_photo_system": {
+      "rules": "1 Main Profile Photo + exactly up to 5 additional gallery photos (Total 6 max). Allows upload, drag/drop, selecting main photo, and instant photo viewer lightbox.",
+      "test_ids": {
+        "main_photo": "profile-main-photo",
+        "gallery_slot": "profile-gallery-photo-slot",
+        "upload_input": "photo-upload-input",
+        "photo_lightbox": "profile-photo-lightbox"
+      }
+    },
+    "language_proficiency_system": {
+      "constraints": {
+        "known_languages": "Maximum 2 languages: 1 Native (Primary) and 1 Fluent (Secondary)",
+        "learning_languages": "Up to 5 languages with desired proficiency goal (Beginner, Intermediate, Advanced)"
+      },
+      "badge_styles": {
+        "native": "bg-sky-100 dark:bg-sky-950/60 text-sky-800 dark:text-sky-300 border border-sky-300/50 px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5",
+        "fluent": "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300/50 px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5",
+        "learning": "bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300/50 px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5"
+      },
+      "test_ids": {
+        "native_lang_selector": "native-language-select",
+        "fluent_lang_selector": "fluent-language-select",
+        "learning_lang_input": "learning-languages-multiselect",
+        "lang_pill": "language-proficiency-pill"
+      }
+    },
+    "location_service": {
+      "options": "Dual-mode: 1) Automatic GPS/IP location detection with permission prompt, 2) Manual searchable country and city dropdown selector with flag icons.",
+      "test_ids": {
+        "auto_detect_btn": "location-auto-detect-btn",
+        "manual_country_select": "location-country-select",
+        "manual_city_input": "location-city-input",
+        "current_location_badge": "user-location-badge"
+      }
+    },
+    "instant_translation_engine": {
+      "scope": "Free instant text translation available on: 1) Every profile bio description, 2) Every incoming/outgoing direct message in chat with target language selection.",
+      "ui_behavior": "Click 'Translate' button with sparkle icon -> shows translated text inline with original toggle, detected language tag, and 'Translated by PolyglotAI' indicator.",
+      "test_ids": {
+        "profile_translate_btn": "profile-bio-translate-btn",
+        "chat_message_translate_btn": "message-translate-btn",
+        "translated_text_box": "translated-content-box",
+        "toggle_original_btn": "toggle-original-text-btn",
+        "target_lang_picker": "chat-translation-target-select"
+      }
+    },
+    "direct_messaging_console": {
+      "features": "Real-time chat, active conversation list, icebreaker prompt generator ('Ask about favorite foods in Tokyo', etc.), message status (Sent, Read), photo attachment preview, and one-click translation.",
+      "test_ids": {
+        "conversation_item": "conversation-list-item",
+        "chat_input": "chat-message-input",
+        "send_button": "chat-send-btn",
+        "message_bubble": "chat-message-bubble",
+        "icebreaker_chip": "chat-icebreaker-chip",
+        "start_chat_btn": "profile-start-message-btn"
+      }
+    }
+  },
+  "component_hierarchy": {
+    "frontend_components": [
+      {
+        "path": "frontend/src/components/layout/Navbar.tsx",
+        "purpose": "Sticky crystal glass navigation with brand logo, Discover, Messages (with unread badge), Profile links, Language Filter quick toggle, and Google Auth state button."
+      },
+      {
+        "path": "frontend/src/components/profile/ProfileCard.tsx",
+        "purpose": "Rich discover card displaying main photo, badge count for +5 gallery photos, Native/Fluent/Learning pills, location with flag, bio with instant translation, and Message CTA."
+      },
+      {
+        "path": "frontend/src/components/profile/PhotoGalleryModal.tsx",
+        "purpose": "Lightbox carousel allowing users to browse all 6 photos (1 main + 5 gallery) in high resolution with keyboard navigation."
+      },
+      {
+        "path": "frontend/src/components/profile/ProfileEditor.tsx",
+        "purpose": "Complete profile management with photo manager (slots for main + 5 gallery photos), location auto-detector/manual picker, 2 known languages, up to 5 learning languages, and bio."
+      },
+      {
+        "path": "frontend/src/components/chat/ChatWindow.tsx",
+        "purpose": "Direct messaging interface with message history, instant in-chat translation button on every bubble, icebreaker generator, and audio/phrase saver."
+      },
+      {
+        "path": "frontend/src/components/translation/TranslationBadge.tsx",
+        "purpose": "Reusable translation widget displaying source language, target language, one-click translation triggering, and original text toggle."
+      }
+    ]
+  },
+  "image_urls": [
+    {
+      "category": "user_avatar_main",
+      "description": "Smiling young woman in natural setting, ideal for female polyglot profile avatar",
+      "url": "https://images.unsplash.com/photo-1758272133833-3a2277d426e4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHx5b3VuZyUyMGRpdmVyc2UlMjBwZW9wbGUlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzk0MDMxOTQ1fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "user_avatar_male",
+      "description": "Friendly young creative man smiling outdoors, ideal for male learner profile",
+      "url": "https://images.unsplash.com/photo-1760574740271-55e6683afe76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMGRpdmVyc2UlMjBwZW9wbGUlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzk0MDMxOTQ1fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "user_gallery_lifestyle_1",
+      "description": "Friends gathering in autumn park representing social exchange and language club",
+      "url": "https://images.unsplash.com/photo-1758613171176-ea64579c2dcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGRpdmVyc2UlMjBwZW9wbGUlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzk0MDMxOTQ1fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "user_gallery_lifestyle_2",
+      "description": "Group selfie outdoors, great for user travel gallery photos",
+      "url": "https://images.unsplash.com/photo-1758275557315-2685e63fa8d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHx5b3VuZyUyMGRpdmVyc2UlMjBwZW9wbGUlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzk0MDMxOTQ1fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "cultural_city_scene_1",
+      "description": "Travelers and students on lakefront promenade with skyline backdrop",
+      "url": "https://images.unsplash.com/photo-1790570614014-300d474df114?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHw0fHx0cmF2ZWxlciUyMGN1bHR1cmFsJTIwY2l0eSUyMGxpZmVzdHlsZXxlbnwwfHx8fDE3OTQwMzE5NDV8MA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "cultural_city_scene_2",
+      "description": "Vibrant European street scene with historic architecture for cultural immersion",
+      "url": "https://images.unsplash.com/photo-1701295680244-3f03dfb53917?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWxlciUyMGN1bHR1cmFsJTIwY2l0eSUyMGxpZmVzdHlsZXxlbnwwfHx8fDE3OTQwMzE5NDV8MA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "cultural_city_scene_3",
+      "description": "Bustling cultural shopping district with storefronts, perfect for location exploration",
+      "url": "https://images.unsplash.com/photo-1760770537533-069cb988df7b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHx0cmF2ZWxlciUyMGN1bHR1cmFsJTIwY2l0eSUyMGxpZmVzdHlsZXxlbnwwfHx8fDE3OTQwMzE5NDV8MA&ixlib=rb-4.1.0&q=85"
+    }
+  ],
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 8 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -8 },
+      "transition": { "duration": 0.25, "ease": [0.22, 1, 0.36, 1] }
+    },
+    "card_hover": {
+      "whileHover": { "y": -4, "transition": { "duration": 0.2 } },
+      "whileTap": { "scale": 0.98 }
+    },
+    "translation_reveal": {
+      "initial": { "opacity": 0, "height": 0 },
+      "animate": { "opacity": 1, "height": "auto" },
+      "transition": { "duration": 0.3, "ease": "easeOut" }
+    }
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG AA (4.5:1 text contrast minimum across all surfaces)",
+    "prefers_reduced_motion": "Wrap framer-motion variants in useReducedMotion() hook or CSS media query",
+    "keyboard_navigation": "Full tab and enter/space support for gallery modals, language selectors, and translation toggles",
+    "aria_roles": {
+      "chat_log": "aria-live='polite' aria-relevant='additions'",
+      "translation_region": "aria-live='polite' role='region' aria-label='Translated message text'",
+      "photo_gallery": "role='dialog' aria-modal='true' aria-label='User photo gallery'"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Fixed Stack: FastAPI backend in `backend/` and React 19 + TypeScript + Tailwind v4 frontend in `frontend/`. Do not change the stack.",
+    "2. Auth: Implement Google Sign-In with a clean simulation fallback ('One-Click Google Login / Demo Accounts') so testing without live OAuth keys works seamlessly.",
+    "3. Profile Photo Constraints: Exactly 1 Main Profile Photo + up to 5 additional gallery photos (maximum 6 total). Provide an intuitive upload/preview UI where users can set any uploaded photo as the 'Main' photo.",
+    "4. Language Rules: Maximum 2 known languages (1 tagged as Native, 1 tagged as Fluent). Up to 5 languages user wants to learn. Render distinct colorful pills (Sky for Native, Emerald for Fluent, Amber for Learning).",
+    "5. Location: Offer dual detection: 'Auto-detect Location' (using navigator.geolocation / IP mockup with friendly city/country result) AND manual Country/City dropdown selectors.",
+    "6. Free Translation: Implement instant translation for: a) Profile bio descriptions with a 'Translate Bio' button, b) In-chat message bubbles with a 'Translate' icon button. Support 15+ popular world languages (Spanish, French, Japanese, German, Hindi, Mandarin, Korean, Italian, Portuguese, Russian, Arabic, etc.) using a fast mock/AI translation helper that returns accurate translations.",
+    "7. Direct Messaging: Build a robust, responsive chat console with conversation list, message status, auto-scroll to bottom, icebreaker prompts, and instant translation per message.",
+    "8. Seed Data: Seed at least 8 rich, diverse international user profiles with complete photos (main + gallery), bios in different languages (Japanese, French, Spanish, German, Hindi, etc.), locations, and language pairs to make discovery and translation immediately impressive.",
+    "9. Testing: Add `data-testid` attributes to all critical interactive elements (Google login, photo uploads, language selects, location buttons, translate buttons, chat inputs, send buttons).",
+    "10. Design Polish: Use the warm terracotta and earthy palette (#FAF8F5 background, #D9532F accent, #2A5B52 secondary), Plus Jakarta Sans headings, DM Sans body, generous spacing, and crisp rounded-2xl cards with layered shadows."
+  ]
+}
